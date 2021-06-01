@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Mukulele</string>
+    <string name="already_registered_login_here">Already Registered? Login Here</string>
+    <string name="register">Register</string>
+    <string name="login">Login</string>
+    <string name="email_address">Email Address</string>
+    <string name="password">Password</string>
 </resources>
