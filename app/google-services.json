@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "530214244730",
+    "project_id": "mukulele-cafe3",
+    "storage_bucket": "mukulele-cafe3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:530214244730:android:45e9c0d658aac5e6e386c3",
+        "android_client_info": {
+          "package_name": "com.example.mukulele"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "530214244730-p72hg05ssl2p3unu36pop22tou4gc0eo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBv6UsXbvo-gg3zv5T9klFamMu2iZCDJg0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "530214244730-p72hg05ssl2p3unu36pop22tou4gc0eo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
