@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
@@ -30,9 +31,9 @@ public class register extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
 
-        mEmail = findViewById(R.id.Email);
-        mPassword = findViewById(R.id.Password);
-        mRegisterBtn = findViewById(R.id.Button);
+        mEmail = findViewById(R.id.registerEmail);
+        mPassword = findViewById(R.id.registerPassword);
+        mRegisterBtn = findViewById(R.id.registerBtn);
         mLoginBtn = findViewById(R.id.textView);
         fAuth = FirebaseAuth.getInstance();
         progressBar = findViewById(R.id.progressBar);
@@ -44,7 +45,7 @@ public class register extends AppCompatActivity {
         }
 
         // account information validation
-        mRegisterBtn.setOnClickListener(new View.OnClickListener() {
+        mRegisterBtn.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
                 String email = mEmail.getText().toString().trim();
@@ -77,10 +78,18 @@ public class register extends AppCompatActivity {
                                     startActivity(new Intent(getApplicationContext(), MainActivity.class));
                                 }else{
                                     Toast.makeText(register.this, "Error!" + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
+                                    progressBar.setVisibility(View.GONE); // once error shown, progressbar disappear
                                 }
                             }
                         }
                 );
+            }
+        });
+
+        mLoginBtn.setOnClickListener(new OnClickListener(){
+            @Override
+            public void onClick(View v){
+                startActivity(new Intent(getApplicationContext(), login.class));
             }
         });
 

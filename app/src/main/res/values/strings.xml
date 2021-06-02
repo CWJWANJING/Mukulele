@@ -8,4 +8,6 @@
     <string name="register_password">Password</string>
     <string name="login_email_address">Email Address</string>
     <string name="login_password">Password</string>
+    <string name="registerTitle">Create New Account</string>
+    <string name="loginTitle">Login Here</string>
 </resources>
