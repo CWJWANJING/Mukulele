@@ -10,4 +10,6 @@
     <string name="login_password">Password</string>
     <string name="registerTitle">Create New Account</string>
     <string name="loginTitle">Login Here</string>
+    <string name="logout">Logout</string>
+    <string name="level1">Level 1</string>
 </resources>

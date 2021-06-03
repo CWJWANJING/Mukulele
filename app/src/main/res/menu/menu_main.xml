@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/pet"
+        android:icon="@drawable/kitty"
+        app:showAsAction="always"
+        android:title="kitty"
+        android:layout_gravity="center"/>
+
+    <item android:id="@+id/coins"
+        android:icon="@drawable/coins"
+        app:showAsAction="always"
+        android:title="coins"
+        android:layout_gravity="center"/>
+</menu>
