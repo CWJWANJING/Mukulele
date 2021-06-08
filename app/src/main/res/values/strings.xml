@@ -12,4 +12,5 @@
     <string name="loginTitle">Login Here</string>
     <string name="logout">Logout</string>
     <string name="level1">Level 1</string>
+    <string name="song_challenge">Song Challenge</string>
 </resources>

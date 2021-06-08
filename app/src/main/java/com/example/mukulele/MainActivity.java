@@ -15,11 +15,14 @@ import android.widget.Toast;
 
 import androidx.appcompat.widget.Toolbar;
 
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class MainActivity extends AppCompatActivity {
 
     Toolbar toolbar;
+    BottomNavigationView bottomNavigationView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,6 +31,28 @@ public class MainActivity extends AppCompatActivity {
         toolbar = (Toolbar) findViewById(R.id.maintoolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayShowTitleEnabled(false);
+
+        // handling the menu selection
+        bottomNavigationView = (BottomNavigationView)findViewById(R.id.bottom_navigation);
+        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                if (item.getItemId() == R.id.ic_learning) {
+                    // do nothing
+                    return true;
+                }
+                if (item.getItemId() == R.id.ic_petinfo) {
+                    return true;
+                }
+                if (item.getItemId() == R.id.ic_settings) {
+                    return true;
+                }
+                if (item.getItemId() == R.id.ic_store) {
+                    return true;
+                }
+                return false;
+            }
+        });
     }
 
 //    @Override
@@ -60,4 +85,9 @@ public class MainActivity extends AppCompatActivity {
         startActivity(new Intent(getApplicationContext(), login.class));
         finish();
     }
+
+    public void SongChallenge1(View view) {
+        startActivity(new Intent(getApplicationContext(), songChallenge.class));
+    }
+
 }
