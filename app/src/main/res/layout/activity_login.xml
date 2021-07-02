@@ -9,13 +9,12 @@
 
     <EditText
         android:id="@+id/loginEmail"
+        android:layout_centerInParent="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
-        android:layout_marginLeft="100dp"
         android:layout_marginTop="250dp"
         android:layout_marginEnd="100dp"
-        android:layout_marginRight="100dp"
         android:layout_marginBottom="447dp"
         android:autofillHints=""
         android:background="#40BB7C70"
@@ -27,20 +26,18 @@
         android:textColorHint="#FFFEFE"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0" />
 
     <EditText
         android:id="@+id/loginPassword"
+        android:layout_centerInParent="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
-        android:layout_marginLeft="100dp"
         android:layout_marginTop="25dp"
         android:layout_marginEnd="100dp"
-        android:layout_marginRight="100dp"
         android:autofillHints=""
         android:background="#40BB7C70"
         android:ems="10"
@@ -49,12 +46,12 @@
         android:padding="8dp"
         android:textColorHint="#FBF9F9"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/loginEmail" />
 
     <TextView
         android:id="@+id/textView2"
+        android:layout_centerInParent="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="120dp"
@@ -71,6 +68,7 @@
 
     <ProgressBar
         android:id="@+id/progressBar3"
+        android:layout_centerInParent="true"
         style="?android:attr/progressBarStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -86,6 +84,7 @@
 
     <Button
         android:id="@+id/loginBtn"
+        android:layout_centerInParent="true"
         android:layout_width="209dp"
         android:layout_height="48dp"
         android:layout_marginStart="150dp"
@@ -97,18 +96,16 @@
         android:text="@string/login"
         app:backgroundTint="#BB7C70"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.479"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/loginPassword" />
 
     <EditText
         android:id="@+id/loginTitle"
-        android:layout_width="0dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="140dp"
-        android:layout_marginLeft="140dp"
-        android:layout_marginEnd="140dp"
-        android:layout_marginRight="140dp"
+        android:layout_centerInParent="true"
+        android:layout_width="128dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginEnd="150dp"
         android:layout_marginBottom="70dp"
         android:autofillHints=""
         android:ems="10"
@@ -119,7 +116,6 @@
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/loginEmail"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent" />
 
 

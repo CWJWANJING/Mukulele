@@ -16,7 +16,7 @@
         scrolling_image_view:source="@drawable/songchallengemidi" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottom_navigation"
+        android:id="@+id/bottom_navigation_settings"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
@@ -27,25 +27,25 @@
 
     <TextView
         android:id="@+id/pitchText"
-        android:layout_width="wrap_content"
+        android:layout_width="66dp"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/bottom_navigation"
+        android:layout_above="@+id/bottom_navigation_settings"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="100dp"
-        android:layout_marginEnd="100dp"
+        android:layout_marginStart="170dp"
+        android:layout_marginEnd="170dp"
         android:layout_marginBottom="200dp"
         android:text="TextView" />
 
     <TextView
         android:id="@+id/noteText"
-        android:layout_width="wrap_content"
+        android:layout_width="72dp"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/pitchText"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="100dp"
-        android:layout_marginEnd="100dp"
+        android:layout_marginStart="170dp"
+        android:layout_marginEnd="170dp"
         android:layout_marginBottom="50dp"
         android:text="TextView" />
 </RelativeLayout>
