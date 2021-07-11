@@ -66,7 +66,8 @@ public class songChallenge extends AppCompatActivity {
             }
         });
 
-        scrollingBackground = (ScrollingImageView) findViewById(R.id.scrolling_background);
+        // The midi image will scroll
+//        scrollingBackground = (ScrollingImageView) findViewById(R.id.scrolling_background);
 //        scrollingBackground.stop();
 //        scrollingBackground.start();
 

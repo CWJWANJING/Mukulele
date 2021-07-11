@@ -7,13 +7,13 @@
     android:layout_height="match_parent"
     tools:context=".songChallenge">
 
-    <com.q42.android.scrollingimageview.ScrollingImageView
-        android:id="@+id/scrolling_background"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        scrolling_image_view:speed="60dp"
-        scrolling_image_view:contiguous="false"
-        scrolling_image_view:source="@drawable/songchallengemidi" />
+<!--    <com.q42.android.scrollingimageview.ScrollingImageView-->
+<!--        android:id="@+id/scrolling_background"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        scrolling_image_view:speed="60dp"-->
+<!--        scrolling_image_view:contiguous="false"-->
+<!--        scrolling_image_view:source="@drawable/songchallengemidi" />-->
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation_settings"

@@ -7,116 +7,128 @@
     android:background="#FAE0CF"
     tools:context=".MainActivity">
 
-    <com.google.android.material.appbar.AppBarLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <androidx.appcompat.widget.Toolbar
-                android:id="@+id/maintoolbar"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-
-                android:background="#BB7C70"
-                android:minHeight="?attr/actionBarSize"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <ImageView
-                android:id="@+id/coinsIcon"
-                android:layout_width="56dp"
-                android:layout_height="52dp"
-                android:layout_marginStart="100dp"
-                android:layout_marginLeft="100dp"
-                android:tint="#FAE0CF"
-                android:contentDescription="coins icon"
-                app:layout_constraintEnd_toStartOf="@+id/maintoolbar"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/coins" />
-
-            <ImageView
-                android:id="@+id/petEPIcon"
-                android:layout_width="35dp"
-                android:layout_height="33dp"
-                android:layout_marginStart="100dp"
-                android:layout_marginLeft="100dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="200dp"
-                android:layout_marginRight="200dp"
-                android:tint="#FAE0CF"
-                android:contentDescription="TODO"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/num_coins"
-                app:layout_constraintTop_toTopOf="@+id/maintoolbar"
-                app:srcCompat="@drawable/kitty" />
-
-            <TextView
-                android:id="@+id/pet_xp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="15dp"
-                android:layout_marginLeft="15dp"
-                android:layout_marginTop="15dp"
-                android:text="0"
-                android:textColor="#F8D9C4"
-                android:textSize="18sp"
-                android:textStyle="bold"
-                app:layout_constraintStart_toEndOf="@+id/petEPIcon"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <TextView
-                android:id="@+id/num_coins"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="15dp"
-                android:text="0"
-                android:textColor="#F8D9C4"
-                android:textSize="18sp"
-                android:textStyle="bold"
-                android:tint="#FAE0CF"
-                app:layout_constraintStart_toEndOf="@+id/coinsIcon"
-                app:layout_constraintTop_toTopOf="@+id/maintoolbar" />
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-    </com.google.android.material.appbar.AppBarLayout>
-
-
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/nav_menu"
         android:background="#AC675D"
         app:itemIconTint="@color/pinkish"
-        app:itemTextColor="#F8D9C4"
-        app:menu="@menu/nav_menu" />
-
+        app:itemTextColor="#F8D9C4"/>
 
     <Button
         android:id="@+id/songChallenge1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/bottom_navigation"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginStart="110dp"
-        android:layout_marginEnd="110dp"
-        android:layout_marginRight="200dp"
-        android:layout_marginBottom="400dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="621dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginRight="120dp"
         android:onClick="SongChallenge1"
         android:text="@string/song_challenge" />
+
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/maintoolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:background="#BB7C70"
+                    android:minHeight="?attr/actionBarSize"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/coinsIcon"
+                    android:layout_width="56dp"
+                    android:layout_height="52dp"
+                    android:layout_marginStart="100dp"
+                    android:layout_marginLeft="100dp"
+                    android:tint="#FAE0CF"
+                    android:contentDescription="coins icon"
+                    app:layout_constraintEnd_toStartOf="@+id/maintoolbar"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/coins" />
+
+                <ImageView
+                    android:id="@+id/petEPIcon"
+                    android:layout_width="35dp"
+                    android:layout_height="33dp"
+                    android:layout_marginStart="100dp"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="200dp"
+                    android:layout_marginRight="200dp"
+                    android:tint="#FAE0CF"
+                    android:contentDescription="TODO"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/num_coins"
+                    app:layout_constraintTop_toTopOf="@+id/maintoolbar"
+                    app:srcCompat="@drawable/kitty" />
+
+                <TextView
+                    android:id="@+id/pet_xp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:text="0"
+                    android:textColor="#F8D9C4"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@+id/petEPIcon"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/num_coins"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:text="0"
+                    android:textColor="#F8D9C4"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:tint="#FAE0CF"
+                    app:layout_constraintStart_toEndOf="@+id/coinsIcon"
+                    app:layout_constraintTop_toTopOf="@+id/maintoolbar" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+
+    <!--    <com.google.android.material.bottomnavigation.BottomNavigationView-->
+<!--        android:id="@+id/bottom_navigation"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:background="#AC675D"-->
+<!--        app:itemIconTint="@color/pinkish"-->
+<!--        app:itemTextColor="#F8D9C4"-->
+<!--        app:menu="@menu/nav_menu" />-->
 
 </RelativeLayout>
