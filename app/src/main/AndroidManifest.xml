@@ -12,9 +12,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Mukulele">
 
-        <activity android:name=".store"></activity>
-        <activity android:name=".petInfo" />
-        <activity android:name=".settings" />
         <activity android:name=".songChallenge" />
         <activity android:name=".MainActivity"/>
         <activity android:name=".login" />

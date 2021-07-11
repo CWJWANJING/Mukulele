@@ -49,16 +49,7 @@ public class songChallenge extends AppCompatActivity {
                     startActivity(new Intent(getApplicationContext(), MainActivity.class));
                     return true;
                 }
-                if (item.getItemId() == R.id.ic_petinfo) {
-                    // go to pet info
-                    startActivity(new Intent(getApplicationContext(), petInfo.class));
-                    return true;
-                }
-                if (item.getItemId() == R.id.ic_settings) {
-                    // go to settings page
-                    startActivity(new Intent(getApplicationContext(), settings.class));
-                    return true;
-                }
+
                 if (item.getItemId() == R.id.ic_store) {
                     return true;
                 }
