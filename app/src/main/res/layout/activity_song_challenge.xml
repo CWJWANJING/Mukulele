@@ -15,21 +15,20 @@
 <!--        scrolling_image_view:contiguous="false"-->
 <!--        scrolling_image_view:source="@drawable/songchallengemidi" />-->
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottom_navigation_settings"
-        android:layout_width="match_parent"
+    <Button
+        android:id="@+id/backToMain"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
         android:layout_alignParentBottom="true"
-        android:background="#AC675D"
-        app:itemIconTint="@color/pinkish"
-        app:itemTextColor="#F8D9C4"
-        app:menu="@menu/nav_menu" />
+        android:onClick="BackToMain"
+        android:text="Back" />
 
     <TextView
         android:id="@+id/pitchText"
         android:layout_width="66dp"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/bottom_navigation_settings"
+        android:layout_centerInParent="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_marginStart="170dp"

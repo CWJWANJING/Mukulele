@@ -13,6 +13,7 @@ import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.TextView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -40,22 +41,22 @@ public class songChallenge extends AppCompatActivity {
         setContentView(R.layout.activity_song_challenge);
 
         // handling the menu selection
-        bottomNavigationView = (BottomNavigationView)findViewById(R.id.bottom_navigation_settings);
-        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
-            @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                if (item.getItemId() == R.id.ic_learning) {
-                    // go to learning page
-                    startActivity(new Intent(getApplicationContext(), MainActivity.class));
-                    return true;
-                }
-
-                if (item.getItemId() == R.id.ic_store) {
-                    return true;
-                }
-                return false;
-            }
-        });
+//        bottomNavigationView = (BottomNavigationView)findViewById(R.id.bottom_navigation_settings);
+//        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+//            @Override
+//            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+//                if (item.getItemId() == R.id.ic_learning) {
+//                    // go to learning page
+//                    startActivity(new Intent(getApplicationContext(), MainActivity.class));
+//                    return true;
+//                }
+//
+//                if (item.getItemId() == R.id.ic_store) {
+//                    return true;
+//                }
+//                return false;
+//            }
+//        });
 
         // The midi image will scroll
 //        scrollingBackground = (ScrollingImageView) findViewById(R.id.scrolling_background);
@@ -152,6 +153,10 @@ public class songChallenge extends AppCompatActivity {
         Thread audioThread = new Thread(dispatcher, "Audio Thread");
         audioThread.start();
 
+    }
+
+    public void BackToMain(View view) {
+        startActivity(new Intent(getApplicationContext(), MainActivity.class));
     }
 
 
