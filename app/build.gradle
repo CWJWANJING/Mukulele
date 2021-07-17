@@ -7,6 +7,7 @@ plugins {
 android {
     compileSdkVersion 30
     buildToolsVersion "30.0.3"
+    ndkVersion '23.0.7421159'
 
     defaultConfig {
         applicationId "com.example.mukulele"
@@ -16,6 +17,10 @@ android {
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        ndk {
+            abiFilters 'armeabi-v7a'
+        }
     }
 
     buildTypes {
@@ -31,6 +36,7 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+    ndkVersion '23.0.7421159'
 }
 
 dependencies {
@@ -55,5 +61,8 @@ dependencies {
 
     implementation "androidx.activity:activity:1.2.3"
     implementation "androidx.fragment:fragment:1.3.4"
+
+    implementation project(':unityLibrary')
+    implementation fileTree(dir: project(':unityLibrary').getProjectDir().toString() + ('\\libs'), include: ['*.jar'])
 
 }

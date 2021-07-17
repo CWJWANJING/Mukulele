@@ -13,6 +13,8 @@ import androidx.fragment.app.Fragment;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
+import com.unity3d.player.UnityPlayerActivity;
+
 public class MainActivity extends AppCompatActivity {
 
     BottomNavigationView bottomNavigationView;
@@ -60,6 +62,8 @@ public class MainActivity extends AppCompatActivity {
             };
 
     public void SongChallenge1(View view) {
-        startActivity(new Intent(getApplicationContext(), songChallenge.class));
+//        startActivity(new Intent(this, UnityPlayerActivity.class));
+        startActivity(new Intent(this, unityActivity.class));
+//        startActivity(new Intent(getApplicationContext(), songChallenge.class));
     }
 }

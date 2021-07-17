@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    style="@android:style/Theme.Black.NoTitleBar"
+    >
+
+
+    <LinearLayout
+        android:id="@+id/ll_unity_container"
+        android:layout_width="400dp"
+        android:layout_height="280dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="#f0f0f0"
+        android:orientation="horizontal" />
+
+    <TextView
+        android:id="@+id/noteText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_unity_container"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="100dp"
+        android:text="note" />
+
+    <TextView
+        android:id="@+id/instruct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_unity_container"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="326dp"
+        android:text="You are playing this note:" />
+
+    <Button
+        android:id="@+id/backToMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:onClick="BackToMain"
+        android:text="Back" />
+
+    <ImageView
+        android:id="@+id/twinklesong"
+        android:layout_width="match_parent"
+        android:layout_height="196dp"
+        android:layout_alignTop="@+id/ll_unity_container"
+        android:layout_marginTop="371dp"
+        android:src="@drawable/twinkletwinkle" />
+
+
+</RelativeLayout>
