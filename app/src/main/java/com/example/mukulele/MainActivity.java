@@ -66,4 +66,9 @@ public class MainActivity extends AppCompatActivity {
         startActivity(new Intent(this, unityActivity.class));
 //        startActivity(new Intent(getApplicationContext(), songChallenge.class));
     }
+    public void instruction(View view) {
+//        startActivity(new Intent(this, UnityPlayerActivity.class));
+        startActivity(new Intent(this, Instructions.class));
+//        startActivity(new Intent(getApplicationContext(), songChallenge.class));
+    }
 }

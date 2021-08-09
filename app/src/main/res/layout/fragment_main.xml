@@ -12,8 +12,11 @@
 <!--        android:layout_width="match_parent"-->
 <!--        android:layout_height="match_parent"/>-->
 
+
+
+
     <Button
-        android:id="@+id/songChallenge1"
+        android:id="@+id/songChallenge"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/fragmentContainer"
@@ -26,6 +29,18 @@
         android:onClick="SongChallenge1"
         android:text="@string/song_challenge" />
 
+    <Button
+        android:id="@+id/Instructions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="290dp"
+        android:onClick="instruction"
+        android:text="Instructions" />
 
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/topbar"
